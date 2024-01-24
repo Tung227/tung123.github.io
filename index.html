@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tùng PodKings </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="Tung" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="123" required>
+
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
+            font-size: 14px;
+            color: #111;
+            line-height: 1.15;
+
+        }
+        #wrapper {
+         max-width: 1370px;
+         margin: 0 auto;   
+        }
+        .headline{
+            text-align: center;
+            margin: 40px 0px;
+        }
+        h3{
+            font-size: 18px;
+            color: #bebebe;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 1px soild #bebebe;
+            display: inline-block;
+            color: #555;
+            font-weight: 600;
+        }
+        ul.products{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul.products li{
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        ul.products li img{
+            max-width: 100%;
+            height: auto;
+        }
+        ul.products li .product-top{
+            position: relative;
+            overflow: hidden;
+        }
+        ul.products li .product-top .product-thumb img{
+            display: block;
+        }
+        ul.products li .product-top a.buy-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #446084;
+            color: #fff;
+            padding: 8px 0px;
+            position: absolute;
+            bottom: -36px;
+            width: 100%
+            
+        }
+        ul.products li:hover a.buy-now{
+            bottom: 0px;
+        }
+        ul.products li .product-info{
+            padding: 10px 0px;
+        }
+        ul.products li .product-info a{
+           display: block;
+           text-decoration: none;
+        }
+        ul.products li .product-info a.product-cat{
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #9e9e9e;
+            padding: 3px 0px;
+        }
+        ul.products li .product-info a.product-name{
+            color: #334862;
+            padding: 3px 0px;
+        }
+        ul.products li .product-info a.product-price{
+            color: #111;
+            padding: 2px 0px;
+            font-weight: 600;
+        }
+    </style>
+    <div id="wapper">
+        <div class="headline">
+            <h3>Sản phẩm bán chạy </h3>
+    </div>
+    <ul class="products">
+       <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                         <img src="images/p1-1.jpeg.webp" alt="">
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                    <!--Mua ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">pods</a>
+                    <a href="" class="product-name">Aspire Riil X </a>
+                    <a href="" class="product-price">$49,99,00</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                         <img src="images/p2-1.jpeg.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                    <!--Mua ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">pods</a>
+                    <a href="" class="product-name">Aspire Gotek X</a>
+                    <a href="" class="product-price">$25,88,00</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                         <img src="images/p8-1.jpeg.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                    <!--Mua ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">Pods</a>
+                    <a href="" class="product-name">Argus pod 20W VOOPOO</a>
+                    <a href="" class="product-price">$32,99,00</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                         <img src="images/p4-1.jpeg.webp" alt="">
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                    <!--Mua ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">pods</a>
+                    <a href="" class="product-name">Xlim pro</a>
+                    <a href="" class="product-price">$24,67,00</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                         <img src="images/p10-1.jpeg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                    <!--Mua ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">pods</a>
+                    <a href="" class="product-name">Vape Mini Aspire Pod System Kit</a>
+                    <a href="" class="product-price">$15,56,00</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                         <img src="images/p6-1.jpeg.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                    <!--Mua ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">pods</a>
+                    <a href="" class="product-name">Xlim pro</a>
+                    <a href="" class="product-price">$11,45,00</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                         <img src="images/p7-1.jpeg.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                    <!--Mua ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">pods</a>
+                    <a href="" class="product-name">Xlim pro</a>
+                    <a href="" class="product-price">$19,99,00</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                         <img src="images/p9-1.jpeg.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                    <!--Mua ngay-->
+                </div>
+                <div class="product-info">
+                    <a href="" class="product-cat">pods</a>
+                    <a href="" class="product-name">Oxva Xlim 2</a>
+                    <a href="" class="product-price">$21,75,00</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+     
+</body>
+</html>
